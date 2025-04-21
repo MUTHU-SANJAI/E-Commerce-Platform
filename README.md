@@ -45,3 +45,57 @@ A full-featured, visually appealing e-commerce platform built using **React 18 w
 - 🌍 **.env** files for managing environment-specific variables
 
 ---
+
+## 📦 Install Dependencies
+
+### 🔧 Backend:
+```bash
+cd server
+npm install
+```
+
+### 🎨 Frontend:
+```bash
+cd client
+npm install
+```
+
+---
+
+## ⚙️ Environment Setup
+
+Create `.env` files in both the `server` and `client` directories with the required environment variables.
+
+### Example `.env` for the backend:
+```env
+MONGO_URI=your_mongodb_connection
+JWT_SECRET=your_jwt_secret
+STRIPE_SECRET_KEY=your_stripe_secret
+EMAIL_USER=your_email@example.com
+EMAIL_PASS=your_email_password
+```
+
+---
+
+## 🚀 Run the App
+
+Start both frontend and backend concurrently:
+
+```bash
+npm run dev
+```
+
+---
+
+## 📦 Deployment
+
+- 🚀 **Netlify** is used for frontend hosting and deployment.
+- 🔐 Backend can be deployed to platforms like **Render**, **Railway**, or **Vercel Serverless Functions**.
+- 🌍 Environment variables are securely managed through `.env` files for each environment.
+
+---
+
+## 📬 Contact
+
+Created by **Muthu Sanjai**  
+📎 [LinkedIn](https://www.linkedin.com/in/muthu-sanjai-as/) | 🌐 [Portfolio](#) | ✉️ [Email](sanjaisssmuthu@gmail.com)
