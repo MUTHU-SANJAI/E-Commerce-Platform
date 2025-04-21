@@ -5,7 +5,7 @@ A full-featured, visually appealing e-commerce platform built using **React**, *
 ---
 
 ### 🔗 Live Demo  
-🌐 [View Live Site](https://melodic-kashata-2e6457.netlify.app/products)
+🌐 [View Live Site](https://melodic-kashata-2e6457.netlify.app)
 
 ---
 
