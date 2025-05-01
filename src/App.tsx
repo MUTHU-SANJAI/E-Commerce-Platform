@@ -8,7 +8,6 @@ import ProtectedRoute from './components/auth/ProtectedRoute';
 import AdminRoute from './components/auth/AdminRoute';
 import { useAuthStore } from './stores/authStore';
 
-// Lazy loaded components
 const Home = lazy(() => import('./pages/Home'));
 const ProductList = lazy(() => import('./pages/ProductList'));
 const ProductDetail = lazy(() => import('./pages/ProductDetail'));
@@ -26,19 +25,17 @@ const AdminOrders = lazy(() => import('./pages/admin/Orders'));
 const AdminUsers = lazy(() => import('./pages/admin/Users'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
-// Load Stripe
 const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLIC_KEY || '');
 
 function App() {
   const { checkAuth } = useAuthStore();
   const location = useLocation();
 
-  // Scroll to top on route change
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
-  // Check if user is logged in
+  
   useEffect(() => {
     checkAuth();
   }, [checkAuth]);
