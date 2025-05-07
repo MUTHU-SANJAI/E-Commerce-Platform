@@ -6,7 +6,7 @@ import ProductCard from '../components/products/ProductCard';
 import { MOCK_PRODUCTS } from '../config';
 
 const Home = () => {
-  // Animate on scroll effect
+  
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
